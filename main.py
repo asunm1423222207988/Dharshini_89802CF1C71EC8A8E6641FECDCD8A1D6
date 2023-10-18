@@ -1,24 +1,10 @@
-"""
-Write a function called linear_search_product that takes the list of products and a target product
-name as input. The function should perform a linear search to find the target product in the list and
-return a list of indices of all occurrences of the product if found, or an empty list if the product is not
-found.
-"""
-
-
-def linearSearchProduct(productList, targetProduct):
-  indices = [] 
-
-  for index, product in enumerate(productList):
-    if product == targetProduct:
-      indices.append(index)
-
-  return indices
-
-
-# Example usage:
-products = ["shoes", "boot", "loafer", "shoes", "sandal", "shoes"]
-target = "shoes"
-target2 = 'apple'
-result = linearSearchProduct(products, target)
-print(result) 
+#calculate the factorical number of a given number
+def factorial_rec(n):
+  if n==0 or n==1:
+    return 1
+  else:
+    return n*factorial_rec(n-1)
+number=int(input("enter a value:"))
+res=factorial_rec(number)
+print("the factorial of {} is {}".format(number,res))
+    
